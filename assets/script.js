@@ -195,7 +195,7 @@
       'home.selectedWork': 'Selected work',
       'home.projectsBuilt': 'Projects I\'ve built',
       'home.aboutMe': 'About me',
-      'home.aboutHeadline': 'How I like to work.',
+      'home.aboutHeadline': 'My journey.',
       'home.about': 'I grew up in Luanda and moved to Portugal at 17 to study. Since then, I\'ve combined university work with different professional experiences, while continuously building projects outside the classroom.',
       'home.whatIWorkWith': 'What I work with',
       'home.inProgress': 'In progress',

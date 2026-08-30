@@ -2,6 +2,8 @@
   const root = document.documentElement;
   const themeButton = document.getElementById('theme-toggle');
   const langButton = document.getElementById('language-toggle');
+  const menuButton = document.getElementById('menu-toggle');
+  const siteNav = document.querySelector('.site-nav');
 
   function applyTheme(theme) {
     root.setAttribute('data-theme', theme);
@@ -40,7 +42,7 @@
       'home.selectedWork': 'Trabalho selecionado',
       'home.projectsBuilt': 'Projetos que desenvolvi',
       'home.aboutMe': 'Sobre mim',
-      'home.aboutHeadline': 'Como gosto de trabalhar.',
+      'home.aboutHeadline': 'O meu percurso.',
       'home.about': 'Cresci em Luanda e vim para Portugal aos 17 anos para estudar. Desde então, tenho conciliado a universidade com várias experiências profissionais, sem deixar de desenvolver projetos por conta própria.',
       'home.whatIWorkWith': 'Com o que trabalho',
       'home.inProgress': 'Em curso',
@@ -195,7 +197,7 @@
       'home.selectedWork': 'Selected work',
       'home.projectsBuilt': 'Projects I\'ve built',
       'home.aboutMe': 'About me',
-      'home.aboutHeadline': 'How I like to work.',
+      'home.aboutHeadline': 'My journey.',
       'home.about': 'I grew up in Luanda and moved to Portugal at 17 to study. Since then, I\'ve combined university work with different professional experiences, while continuously building projects outside the classroom.',
       'home.whatIWorkWith': 'What I work with',
       'home.inProgress': 'In progress',
@@ -352,4 +354,23 @@
   });
 
   document.getElementById('year')?.replaceChildren(String(new Date().getFullYear()));
+
+  menuButton?.addEventListener('click', () => {
+    const isOpen = siteNav?.classList.toggle('open');
+
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+    menuButton.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    menuButton.textContent = isOpen ? '×' : '☰';
+  });
+
+  siteNav?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      siteNav.classList.remove('open');
+      menuButton?.setAttribute('aria-expanded', 'false');
+      menuButton?.setAttribute('aria-label', 'Open menu');
+
+      if (menuButton) menuButton.textContent = '☰';
+    });
+  });
+
 })();

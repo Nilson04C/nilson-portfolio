@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nilson Cardoso | Computer Science and Engineering Graduate portfolio." />
+  <title>Nilson Cardoso | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Nilson Cardoso home">NC <span>Nilson Cardoso</span></a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a data-nav data-i18n="nav.home" href="index.html">Home</a>
+        <a data-nav data-i18n="nav.about" href="about.html">About</a>
+        <a data-nav data-i18n="nav.projects" href="projects.html">Projects</a>
+        <a data-nav data-i18n="nav.experience" href="experience.html">Experience</a>
+        <a data-nav data-i18n="nav.education" href="education.html">Education</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button>
+        <button class="lang-button" id="language-toggle" type="button" aria-label="Switch language">PT</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Computer Science & Engineering Graduate</p>
+        <h1 data-i18n="hero.h1">I build, learn and solve problems across technology.</h1>
+        <p class="hero-text" data-i18n="hero.text">
+          I'm Nilson Cardoso, a Computer Science and Engineering graduate from Luanda, Angola, now based in Portugal. This portfolio is an extended look at my academic work, projects and professional experience.
+        </p>
+        <div class="hero-meta">
+          <span class="status-dot"></span>
+          <span data-i18n="hero.status">Open to opportunities</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button button-dark" href="projects.html" data-i18n="hero.projects">View projects</a>
+          <a class="button button-light" href="assets/Nilson-Cardoso-CV.pdf" download data-i18n="hero.cv">Download CV</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="dot-field"></div>
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-i18n="home.selectedWork">Selected work</p>
+          <h2 data-i18n="home.projectsBuilt">Projects I've built</h2>
+        </div>
+        <a class="text-link" href="projects.html" data-i18n="common.seeAll">See all projects →</a>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="project-topline"><span class="score"><span data-i18n="common.gradeLabel">Grade</span>: 18/20</span></div>
+          <div>
+            <h3>RiskTrack</h3>
+            <p data-i18n="project.risk.short">Machine learning web application designed to support the prediction of academic dropout risk.</p>
+          </div>
+          <div class="tag-row">
+            <span class="tag">R</span><span class="tag">Shiny</span><span class="tag">PostgreSQL</span><span class="tag">ML</span>
+          </div>
+          <a class="card-link" href="projects.html#risktrack" data-i18n="common.details">See more details</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-topline"><span class="score"><span data-i18n="common.gradeLabel">Grade</span>: 18/20</span></div>
+          <div>
+            <h3>Travelex</h3>
+            <p data-i18n="project.travel.short">Distributed web platform connecting travellers with people who need to send goods internationally.</p>
+          </div>
+          <div class="tag-row">
+            <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">Firebase</span>
+          </div>
+          <a class="card-link" href="projects.html#travelex" data-i18n="common.details">See more details</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-topline"><span class="status-label" data-i18n="home.inProgress">In progress</span></div>
+          <div>
+            <h3>CV Replacement Extension</h3>
+            <p data-i18n="project.cv.short">Chrome extension exploring how uploaded files can use a virtual filename without changing the original local file.</p>
+          </div>
+          <div class="tag-row"><span class="tag">JavaScript</span><span class="tag">Chrome APIs</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container split-section">
+        <div>
+          <p class="eyebrow" data-i18n="home.aboutMe">About me</p>
+          <h2 data-i18n="home.aboutHeadline">How I like to work.</h2>
+        </div>
+        <div>
+          <p data-i18n="home.about">
+            I grew up in Luanda and moved to Portugal at 17 to study. Since then, I’ve combined university work with different professional experiences, while continuously building projects outside the classroom.
+          </p>
+          <a class="text-link" href="about.html" data-i18n="common.readAbout">Read more about me →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-i18n="common.skills">Skills</p>
+          <h2 data-i18n="home.whatIWorkWith">What I work with</h2>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3 data-i18n="skills.programming">Programming</h3>
+          <p>Python · R · C · Java · JavaScript · TypeScript · SQL</p>
+          <span class="skill-note" data-i18n="skills.note.programming">Comfortable with / hands-on experience</span>
+        </div>
+        <div class="skill-group">
+          <h3 data-i18n="skills.web">Web & APIs</h3>
+          <p>React · Node.js · RESTful APIs</p>
+          <span class="skill-note" data-i18n="skills.note.web">Hands-on experience</span>
+        </div>
+        <div class="skill-group">
+          <h3 data-i18n="skills.data">Data & Databases</h3>
+          <p>PostgreSQL · MySQL · Firebase Firestore · Firebase Realtime Database · Power BI · Excel</p>
+          <span class="skill-note" data-i18n="skills.note.data">Mixed experience depending on the tool</span>
+        </div>
+        <div class="skill-group">
+          <h3 data-i18n="skills.tools">Tools</h3>
+          <p>Git · GitHub · Jira · VS Code · Figma · Docker</p>
+          <span class="skill-note" data-i18n="skills.note.tools">Comfortable with selected tools · basic knowledge of Docker</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section container">
+      <div>
+        <p class="eyebrow" data-i18n="contact.eyebrow">Let's connect</p>
+        <h2 data-i18n="contact.headline">Open to conversations and opportunities.</h2>
+        <p class="contact-email"><a href="mailto:nicarbessa@gmail.com">nicarbessa@gmail.com</a></p>
+      </div>
+      <div class="contact-actions">
+        <a class="button button-dark" href="mailto:nicarbessa@gmail.com" data-i18n="contact.emailMe">Email me</a>
+        <a class="button button-light" href="https://www.linkedin.com/in/nilson-cardoso15/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="button button-light" href="https://github.com/Nilson04C" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <span>© <span id="year"></span> Nilson Cardoso</span>
+      <span data-i18n="footer.role">Computer Science and Engineering Graduate</span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Nilson Cardoso." />
+  <title>Projects | Nilson Cardoso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" /><script defer src="assets/script.js"></script>
+</head>
+<body>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html">NC <span>Nilson Cardoso</span></a><nav class="site-nav">
+    <a data-nav data-i18n="nav.home" href="index.html">Home</a>
+    <a data-nav data-i18n="nav.about" href="about.html">About</a>
+    <a data-nav data-i18n="nav.projects" href="projects.html">Projects</a>
+    <a data-nav data-i18n="nav.experience" href="experience.html">Experience</a>
+    <a data-nav data-i18n="nav.education" href="education.html">Education</a>
+  </nav><div class="nav-actions"><button class="icon-button" id="theme-toggle" type="button">◐</button><button class="lang-button" id="language-toggle" type="button">PT</button></div></div></header>
+  <main>
+    <section class="page-intro container"><p class="eyebrow" data-i18n="nav.projects">Projects</p><h1 data-i18n="projects.h1">Work beyond the CV.</h1><p class="lead" data-i18n="projects.lead">A selection of academic and personal projects, from machine learning and distributed systems to browser extensions.</p></section>
+    <section class="section container">
+      <div class="project-list">
+        <article class="project-detail" id="risktrack">
+          <div class="project-detail-head"><h2>RiskTrack</h2><span class="score"><span data-i18n="common.gradeLabel">Grade</span>: 18/20</span></div>
+          <p class="detail-intro" data-i18n="projects.risktrack.intro">Individual final-year project focused on using machine learning and data analysis as support for addressing academic dropout.</p>
+          <div class="detail-grid">
+            <div><h3 data-i18n="projects.risktrack.contextTitle">Context</h3><p data-i18n="projects.risktrack.context">The application was developed around the problem of predicting which students may be at risk of dropping out, using historical academic data.</p></div>
+            <div><h3 data-i18n="projects.risktrack.approachTitle">Approach</h3><p data-i18n="projects.risktrack.approach">CRISP-DM, exploratory data analysis, data preparation, decision-tree modelling, hyperparameter tuning and model evaluation.</p></div>
+            <div><h3 data-i18n="projects.risktrack.stackTitle">Stack</h3><p data-i18n="projects.risktrack.stack">R, Shiny, caret, rpart, tidymodels, PostgreSQL, DBI, RPostgres, pool, DT, pheatmap and RStudio.</p></div>
+            <div><h3 data-i18n="projects.risktrack.resultsTitle">Results</h3><p data-i18n="projects.risktrack.results">Final model evaluation included 0.77 balanced accuracy, 0.69 F1-score, 0.68 recall and 0.86 specificity.</p></div>
+          </div>
+          <details class="more-details"><summary data-i18n="common.details">See more details</summary><div class="details-content"><p data-i18n="projects.risktrack.more1">The application supports model training, optional cross-validation, handling of missing values, prediction, CSV export and management of stored models and predictions. Models are stored as RDS files, while PostgreSQL stores related metadata.</p><p data-i18n="projects.risktrack.more2">The project also included a C4 architecture, accessibility testing and analysis of model limitations. RF04 (dataset/model compatibility validation) was not completed, and formal usability validation was not carried out due to time constraints.</p><p data-i18n="projects.risktrack.more3">The trained model lives inside the app itself rather than as a separate service: the same application handles training, evaluation and prediction. The decision tree was built with rpart and tuned via cross-validation, with particular weight given to recall during evaluation, since missing an at-risk student is more costly than a false alarm.</p><div class="tag-row"><span class="tag">R</span><span class="tag">Shiny</span><span class="tag">PostgreSQL</span><span class="tag">Machine Learning</span><span class="tag">CRISP-DM</span></div></div></details>
+          <div class="project-actions"><a class="button button-light" href="https://github.com/Nilson04C/RiskTrack" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+        </article>
+
+        <article class="project-detail" id="travelex">
+          <div class="project-detail-head"><h2>Travelex</h2><span class="score"><span data-i18n="common.gradeLabel">Grade</span>: 18/20</span></div>
+          <p class="detail-intro" data-i18n="projects.travelex.intro">Group project for Distributed Systems Programming, designed to digitalise the informal practice of sending goods through travellers.</p>
+          <div class="detail-grid">
+            <div><h3 data-i18n="projects.travelex.roleTitle">My role</h3><p data-i18n="projects.travelex.role">Backend Developer and Project Manager.</p></div>
+            <div><h3 data-i18n="projects.travelex.approachTitle">Approach</h3><p data-i18n="projects.travelex.approach">Scrum with six documented sprints covering requirements, offers, selection, payments and delivery confirmation.</p></div>
+            <div><h3 data-i18n="projects.travelex.stackTitle">Stack</h3><p data-i18n="projects.travelex.stack">React, TypeScript, Node.js, Express, Firebase, Firebase Authentication, Stripe Connect, CometChat and external flight APIs.</p></div>
+            <div><h3 data-i18n="projects.travelex.flowTitle">Core flow</h3><p data-i18n="projects.travelex.flow">Traveller posts an offer → customer selects it → payment is held → delivery is completed → payment is released.</p></div>
+          </div>
+          <details class="more-details"><summary data-i18n="common.details">See more details</summary><div class="details-content"><p data-i18n="projects.travelex.more1">The platform validates flights through an external API, uses Firebase for authentication and data storage, and uses Stripe Connect for payment flows designed around delivery confirmation. Security considerations included identity checks, visible ratings and double confirmation of delivery.</p><p data-i18n="projects.travelex.more2">The project was developed in an academic setting and was not validated with real users. Future work included real-world usability testing, stronger security mechanisms and additional tracking features.</p><p data-i18n="projects.travelex.more3">Before development started, I explored UI mockups to work through the platform's look and feel, aiming for something modern but not futuristic, and focused on building trust between strangers exchanging money and packages.</p><div class="tag-row"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">Firebase</span><span class="tag">Stripe</span><span class="tag">REST APIs</span></div></div></details>
+        </article>
+
+        <article class="project-detail compact"><div class="project-detail-head"><h2>CV Replacement Extension</h2><span class="status-label" data-i18n="home.inProgress">In progress</span></div><p class="detail-intro" data-i18n="projects.cv.intro">A Chrome extension exploring virtual filename replacement for files uploaded through web forms.</p><div class="tag-row"><span class="tag">JavaScript</span><span class="tag">Chrome Extension</span></div></article>
+        <article class="project-detail compact"><div class="project-detail-head"><h2 data-i18n="projects.jobResumer.title">Job Resumer Extension</h2><span class="status-label" data-i18n="home.inProgress">In progress</span></div><p class="detail-intro" data-i18n="projects.jobResumer.intro">A browser extension focused on helping summarise job descriptions during job-search workflows.</p><div class="tag-row"><span class="tag">JavaScript</span><span class="tag">Chrome Extension</span></div></article>
+        <article class="project-detail compact"><div class="project-detail-head"><h2>CargaComigo</h2><span class="status-label" data-i18n="projects.comingSoon">Coming soon</span></div><p class="detail-intro" data-i18n="projects.cargaComigo.intro">A project in development around connecting travellers with people who need to send goods.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-wrap"><span>© <span id="year"></span> Nilson Cardoso</span><span data-i18n="nav.projects">Projects</span></div></footer>
+</body>
+</html>

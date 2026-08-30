@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Nilson Cardoso." />
+  <title>About | Nilson Cardoso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+  <header class="site-header"><div class="container nav-wrap">
+    <a class="brand" href="index.html">NC <span>Nilson Cardoso</span></a>
+    <nav class="site-nav">
+      <a data-nav data-i18n="nav.home" href="index.html">Home</a>
+      <a data-nav data-i18n="nav.about" href="about.html">About</a>
+      <a data-nav data-i18n="nav.projects" href="projects.html">Projects</a>
+      <a data-nav data-i18n="nav.experience" href="experience.html">Experience</a>
+      <a data-nav data-i18n="nav.education" href="education.html">Education</a>
+    </nav>
+    <div class="nav-actions"><button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button><button class="lang-button" id="language-toggle" type="button">PT</button></div>
+  </div></header>
+
+  <main>
+    <section class="page-intro container"><p class="eyebrow" data-i18n="nav.about">About</p><h1 data-i18n="about.h1">A little more about me.</h1><p class="lead" data-i18n="about.lead">A closer look at where I come from, what I enjoy and what shaped the way I approach work.</p></section>
+
+    <section class="section container about-grid">
+      <div>
+        <p class="eyebrow" data-i18n="about.whoIAm">Who I am</p>
+        <h2 data-i18n="about.fromLuanda">From Luanda to Portugal.</h2>
+      </div>
+      <div class="prose">
+        <p data-i18n="about.p1">My name is Nilson Cardoso. I grew up in Luanda, Angola, and moved to Portugal at 17 to pursue a degree in Computer Science and Engineering.</p>
+        <p data-i18n="about.p2">At 18, I started living on my own and became responsible for managing my own life while continuing my studies. That experience shaped my independence, adaptability and practical approach to problem-solving.</p>
+        <p data-i18n="about.p3">Outside technology, I enjoy going to the gym and exercising, previously practised martial arts, have a long-standing interest in photography and am currently learning to play the piano.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container"><div class="section-heading"><div><p class="eyebrow" data-i18n="about.timeline">Timeline</p><h2 data-i18n="about.milestones">A few milestones.</h2></div></div>
+        <div class="timeline">
+          <article class="timeline-item"><span class="timeline-year">17</span><div><h3 data-i18n="about.tl1Title">Moved to Portugal</h3><p data-i18n="about.tl1Desc">Moved from Luanda to Portugal to pursue higher education.</p></div></article>
+          <article class="timeline-item"><span class="timeline-year">18</span><div><h3 data-i18n="about.tl2Title">Started living independently</h3><p data-i18n="about.tl2Desc">Began living on my own while studying.</p></div></article>
+          <article class="timeline-item"><span class="timeline-year">2022</span><div><h3 data-i18n="about.tl3Title">Started university</h3><p data-i18n="about.tl3Desc">Studied Computer Science and Engineering at Universidade Lusófona do Porto.</p></div></article>
+          <article class="timeline-item"><span class="timeline-year">2025</span><div><h3 data-i18n="about.tl4Title">Graduated</h3><p data-i18n="about.tl4Desc">Completed the degree and final-year project, RiskTrack, graded 18/20.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="about.outsideTech">Outside technology</p><h2 data-i18n="about.thingsIEnjoy">Things I enjoy.</h2></div></div>
+      <div class="hobby-grid">
+        <div class="hobby-card"><h3 data-i18n="about.hobby1Title">Photography</h3><p data-i18n="about.hobby1Desc">I used to spend a lot of time around photography and still enjoy the visual side of it.</p></div>
+        <div class="hobby-card"><h3 data-i18n="about.hobby2Title">Training</h3><p data-i18n="about.hobby2Desc">Gym and physical exercise are part of how I keep active and maintain balance.</p></div>
+        <div class="hobby-card"><h3 data-i18n="about.hobby3Title">Martial arts</h3><p data-i18n="about.hobby3Desc">I previously practised martial arts and enjoyed the discipline that came with it.</p></div>
+        <div class="hobby-card"><h3 data-i18n="about.hobby4Title">Piano</h3><p data-i18n="about.hobby4Desc">I am currently learning to play piano and gradually building my skills.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-wrap"><span>© <span id="year"></span> Nilson Cardoso</span><span data-i18n="nav.about">About</span></div></footer>
+</body>
+</html>

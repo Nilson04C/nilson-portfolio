@@ -40,7 +40,7 @@
       'home.selectedWork': 'Trabalho selecionado',
       'home.projectsBuilt': 'Projetos que desenvolvi',
       'home.aboutMe': 'Sobre mim',
-      'home.aboutHeadline': 'Como gosto de trabalhar.',
+      'home.aboutHeadline': 'O meu percurso.',
       'home.about': 'Cresci em Luanda e vim para Portugal aos 17 anos para estudar. Desde então, tenho conciliado a universidade com várias experiências profissionais, sem deixar de desenvolver projetos por conta própria.',
       'home.whatIWorkWith': 'Com o que trabalho',
       'home.inProgress': 'Em curso',

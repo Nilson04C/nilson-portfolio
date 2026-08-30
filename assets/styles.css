@@ -39,6 +39,7 @@ button { font: inherit; }
 .site-nav a:hover, .site-nav a.active { color: var(--text); border-color: var(--text); }
 .nav-actions { display: flex; gap: 8px; align-items: center; }
 .icon-button, .lang-button { width: 38px; height: 38px; border: 1px solid var(--line); background: var(--surface); color: var(--text); border-radius: 999px; cursor: pointer; }
+.menu-button { display: none; width: 38px; height: 38px; border: 1px solid var(--line); background: var(--surface); color: var(--text); border-radius: 999px; cursor: pointer; font-size: 18px; line-height: 1;}
 .lang-button { width: auto; padding: 0 12px; font-size: 12px; font-weight: 600; }
 
 .hero { min-height: calc(100vh - 76px); display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 64px; padding-top: 60px; padding-bottom: 90px; }
@@ -134,7 +135,11 @@ h3 { margin: 0; font-size: 1.25rem; }
 .footer-wrap { display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 12px; }
 
 @media (max-width: 900px) {
-  .site-nav { display: none; }
+  .site-nav { display: none; position: absolute; top: calc(100% + 1px); left: 0; right: 0; padding: 14px; background: var(--bg); border-bottom: 1px solid var(--line); box-shadow: var(--shadow); flex-direction: column; gap: 0;}
+  .site-nav.open { display: flex;}
+  .site-nav a { padding: 14px 20px; border-bottom: 1px solid var(--line); }
+  .site-nav a:last-child { border-bottom: none; }
+  .menu-button { display: block; }
   .hero, .split-section, .about-grid { grid-template-columns: 1fr; gap: 44px; }
   .hero { min-height: auto; padding-top: 70px; }
   .hero-visual { min-height: 300px; }

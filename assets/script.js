@@ -2,6 +2,8 @@
   const root = document.documentElement;
   const themeButton = document.getElementById('theme-toggle');
   const langButton = document.getElementById('language-toggle');
+  const menuButton = document.getElementById('menu-toggle');
+  const siteNav = document.querySelector('.site-nav');
 
   function applyTheme(theme) {
     root.setAttribute('data-theme', theme);
@@ -352,4 +354,23 @@
   });
 
   document.getElementById('year')?.replaceChildren(String(new Date().getFullYear()));
+
+  menuButton?.addEventListener('click', () => {
+    const isOpen = siteNav?.classList.toggle('open');
+
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+    menuButton.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    menuButton.textContent = isOpen ? '×' : '☰';
+  });
+
+  siteNav?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      siteNav.classList.remove('open');
+      menuButton?.setAttribute('aria-expanded', 'false');
+      menuButton?.setAttribute('aria-label', 'Open menu');
+
+      if (menuButton) menuButton.textContent = '☰';
+    });
+  });
+
 })();

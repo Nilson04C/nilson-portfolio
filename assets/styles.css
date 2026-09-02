@@ -39,7 +39,7 @@ button { font: inherit; }
 .site-nav a:hover, .site-nav a.active { color: var(--text); border-color: var(--text); }
 .nav-actions { display: flex; gap: 8px; align-items: center; }
 .icon-button, .lang-button { width: 38px; height: 38px; border: 1px solid var(--line); background: var(--surface); color: var(--text); border-radius: 999px; cursor: pointer; }
-.menu-button { display: none; width: 38px; height: 38px; border: 1px solid var(--line); background: var(--surface); color: var(--text); border-radius: 999px; cursor: pointer; font-size: 18px; line-height: 1;}
+.menu-button {display: none; width: 38px; height: 38px; border: 1px solid var(--line); background: var(--surface); color: var(--text); border-radius: 999px; cursor: pointer; font-size: 18px; line-height: 1; padding: 0; }
 .lang-button { width: auto; padding: 0 12px; font-size: 12px; font-weight: 600; }
 
 .hero { min-height: calc(100vh - 76px); display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 64px; padding-top: 60px; padding-bottom: 90px; }
@@ -149,6 +149,9 @@ h3 { margin: 0; font-size: 1.25rem; }
 }
 
 @media (max-width: 620px) {
+  .site-header { position: sticky; z-index: 100; }
+  .nav-wrap { position: relative; }
+  .site-nav { z-index: 99; }
   .container { width: min(100% - 28px, 1160px); }
   .nav-wrap { min-height: 66px; }
   .brand span { display: none; }

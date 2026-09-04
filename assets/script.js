@@ -86,7 +86,7 @@
       'about.outsideTech': 'Fora da tecnologia',
       'about.thingsIEnjoy': 'Coisas de que gosto.',
       'about.hobby1Title': 'Fotografia',
-      'about.hobby1Desc': 'A fotografia foi um dos meus principais interesses durante alguns anos e continuo a apreciar o seu lado visual e criativo.',      
+      'about.hobby1Desc': 'A fotografia foi um dos meus principais interesses durante alguns anos e continuo a apreciar o seu lado visual e criativo.',
       'about.hobby2Title': 'Treino',
       'about.hobby2Desc': 'O ginásio faz parte da minha rotina e é uma das formas como gosto de me manter ativo.',
       'about.hobby3Title': 'Artes marciais',

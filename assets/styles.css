@@ -76,10 +76,10 @@ h3 { margin: 0; font-size: 1.25rem; }
 .project-card.featured { min-height: 390px; }
 .project-topline { display: flex; justify-content: flex-end; }
 .project-detail-head, .education-top { display: flex; justify-content: space-between; gap: 18px; align-items: flex-start; }
-.score, .status-label { display: inline-flex; align-items: center; padding: 7px 14px; border-radius: 999px; font-size: 13px; font-weight: 700; letter-spacing: .02em; text-transform: none; }
-.score { background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--accent); }
-.score span { font-weight: 700; }
-.status-label { background: var(--surface-2); border: 1px solid var(--line); color: var(--muted); font-size: 12px; font-weight: 600; }
+.score { display: inline-flex; align-items: baseline; gap: 7px; }
+.score-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: var(--muted); }
+.score-value { font-size: 17px; font-weight: 700; color: var(--accent); letter-spacing: -.01em; }
+.status-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: var(--muted); }
 .project-card p, .project-detail p, .experience-item p, .cert-card p, .hobby-card p, .skill-group p { color: var(--muted); }
 .tag-row, .skill-inline { display: flex; gap: 7px; flex-wrap: wrap; margin-top: 18px; }
 .tag, .skill-inline span { font-size: 12px; padding: 6px 9px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); }

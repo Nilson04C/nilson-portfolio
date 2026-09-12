@@ -34,7 +34,7 @@
 
       'hero.eyebrow': 'Licenciado em Engenharia Informática',
       'hero.h1': 'Desenvolvo, aprendo e resolvo problemas com tecnologia.',
-      'hero.text': 'Sou o Nilson Cardoso, licenciado em Engenharia Informática, natural de Luanda, Angola, e atualmente a viver em Portugal. Este portefólio complementa o meu CV, com mais detalhe sobre os meus projetos, formação e experiência profissional.',
+      'hero.text': 'chamo-me Nilson Cardoso, sou licenciado em Engenharia Informática, natural de Luanda, Angola, e atualmente a viver em Portugal. Este portefólio serve para complementar o meu CV, com mais detalhe sobre os meus projetos, formação e experiência profissional.',
       'hero.status': 'Aberto a oportunidades',
       'hero.projects': 'Ver projetos',
       'hero.cv': 'Descarregar CV',

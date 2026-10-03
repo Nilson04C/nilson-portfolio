@@ -18,6 +18,15 @@
     gtag('js', new Date());
 
     gtag('config', 'G-WR6RF20GPJ');
+
+    const referrer = document.referrer;
+
+    if (referrer.includes('linkedin.com')) {
+      gtag('event', 'linkedin_visit', {
+      traffic_source: 'linkedin'
+      });
+    }
+
   </script>
 </head>
 <body>
